@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  background: var(--noir);
+}
+
+
+:root {
+  --gris: RGB(50,50,50);
+  --noir: RGB(25,25,25);
+  --blanc: RGB(244,244,244);
+  --rouge: RGB(214,48,49);
+}

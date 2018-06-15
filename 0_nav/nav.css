@@ -1,0 +1,37 @@
+#section-0 {
+  width: 100%;
+  background: var(--gris);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.nav-content {
+  width: 18.75%;
+  padding: 8px 7px;
+  //border-right: 0.5px solid var(--blanc);
+  text-align: center;
+}
+
+.nav-content a {
+  text-decoration: none;
+
+  font-size: 12px;
+  color: var(--blanc);
+}
+
+.nav-content:first-child {
+  //border-left: 0.5px solid var(--blanc);
+}
+
+.nav-content:hover {
+  background: var(--noir);
+  cursor: pointer;
+  border-right: 0.5px solid var(--blanc);
+  border-left: 0.5px solid var(--blanc);
+}
