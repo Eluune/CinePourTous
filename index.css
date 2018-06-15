@@ -12,6 +12,7 @@ html, body {
 
 :root {
   --gris: RGB(50,50,50);
+  --grisclair: RGB(100,100,100);
   --noir: RGB(25,25,25);
   --blanc: RGB(244,244,244);
   --rouge: RGB(214,48,49);

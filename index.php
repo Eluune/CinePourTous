@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="0_nav/nav.css">
     <link rel="stylesheet" href="1_accueil/accueil.css">
+    <link rel="stylesheet" href="8_footer/footer.css">
   </head>
   <body>
     <?php include("0_nav/nav.php"); ?>
     <?php include("1_accueil/accueil.php"); ?>
+    <?php include("8_footer/footer.php"); ?>
   </body>
 </html>

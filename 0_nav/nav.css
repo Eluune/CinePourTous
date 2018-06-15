@@ -29,9 +29,9 @@
   //border-left: 0.5px solid var(--blanc);
 }
 
-.nav-content:hover {
+.nav-content:hover, .active {
   background: var(--noir);
   cursor: pointer;
-  border-right: 0.5px solid var(--blanc);
-  border-left: 0.5px solid var(--blanc);
+  border-right: 0.5px solid var(--grisclair);
+  border-left: 0.5px solid var(--grisclair);
 }
