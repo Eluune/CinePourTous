@@ -6,7 +6,11 @@
 
 html, body {
   width: 100%;
-  background: var(--noir);
+  background-image: url("images/background.png");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 

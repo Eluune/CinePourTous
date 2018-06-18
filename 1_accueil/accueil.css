@@ -16,6 +16,7 @@
 
 .header-logo {
   flex-grow: 1;
+  display: flex;
   color: var(--rouge);
   text-align: left;
   font-size: 22px;
@@ -23,6 +24,12 @@
 
 #header-logo {
   font-size: 33px;
+}
+
+#header-logo-img {
+  width: 88px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .header-nav {
@@ -62,8 +69,8 @@
 /* slider */
 
 .slider-content {
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: left;
   background-repeat: no-repeat;
   background-color: var(--blanc);
   height: 500px;
@@ -82,6 +89,45 @@
   padding: 10px 0;
 }
 
+.slider-informations {
+  width: 55%;
+  position: relative;
+  left: 40%;
+  text-align: justify;
+}
+
+.slider-informations td {
+  color: var(--rouge);
+  line-height: 150%;
+}
+
+.slider-informations th {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.slider-informations hr {
+  border: 0.5px solid var(--grisclair);
+}
+
+.slider-attribut {
+  color: var(--grisclair);
+}
+
+fieldset {
+  color: var(--noir);
+  padding: 10px;
+  background: var(--blanc);
+  border: 1px solid var(--rouge);
+  margin-top: 10px;
+}
+
+legend {
+  color: var(--grisclair);
+}
+
 
 /* content */
 .content-container {
@@ -92,7 +138,7 @@
 
 .actualite-content, .film-content {
   width: 70%;
-  height: 500px;
+  //height: 500px;
   background: var(--blanc);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
@@ -139,4 +185,51 @@
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   font-size: 22px;
+}
+
+#map {
+  height: 440px;
+  margin-top: 50px;
+}
+
+.film-content {
+  padding: 15px 0 0 0;
+}
+
+.film-content th {
+  width: 20%;
+}
+
+.film-content td {
+  width: 65%;
+  position: relative;
+  left: 5%;
+}
+
+.film-image {
+  width: 100%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 50px;
+}
+
+.film-informations {
+  width: 100%;
+}
+
+.film-attribut {
+  color: var(--grisclair);
+}
+
+#btn_programme {
+  background: var(--rouge);
+  color: var(--blanc);
+  width: 60%;
+  padding: 10px 0px;
+  text-align: center;
+  position: relative;
+  left: 40%;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px -3px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }

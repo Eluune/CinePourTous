@@ -1,3 +1,18 @@
+<?php
+  /* Base de données */
+  include("bdd/config.php");
+  include("bdd/bdd.php");
+
+  /* fonctions */
+  include("fonction/formatdate.php");
+  include("fonction/resumer.php");
+
+  $sql = "SELECT * FROM evenement ORDER BY date DESC";
+  $resultats=$bdd->query($sql);
+  $tableau=$resultats->fetchAll(PDO::FETCH_OBJ);
+  $resultats->closeCursor();
+?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -22,5 +37,8 @@
     <?php include("0_nav/nav.php"); ?>
     <?php include("1_accueil/accueil.php"); ?>
     <?php include("8_footer/footer.php"); ?>
+
+    <script src="1_accueil/lieu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBnmptl3ynFMtZf1eIab9JowUu10H_SyA&callback=initMap" async defer></script>
   </body>
 </html>
