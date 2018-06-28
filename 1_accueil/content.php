@@ -10,7 +10,7 @@
           $interval = $datetime1->diff($datetime2);
         ?>
 
-        <?php if($interval->format('%r%a') < -7): ?>
+        <?php if($interval->format('%r%a') < 0): ?>
           <?php $prochainnement = true; ?>
           <div class="content-pro-film">
             <div class="pro-film-image">

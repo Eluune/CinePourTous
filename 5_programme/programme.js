@@ -10,12 +10,15 @@ $(document).ready(function()
   {
     $("#accueil_content").hide("drop", { direction: "left" }, 1000);
     $("#accueil_slider").hide("drop", { direction: "left" }, 1000);
+    $("#section-6").hide("drop", { direction: "left" }, 1000);
+
     $("#section-5").show("drop", { direction: "right"}, 2000);
   });
 
   $("#nav-home").click(function()
   {
     $("#section-5").hide("drop", { direction: "right"}, 1000);
+    $("#section-6").hide("drop", { direction: "right"}, 1000);
     $("#accueil_slider").show("drop", { direction: "left" }, 2000);
     $("#accueil_content").show("drop", { direction: "left" }, 2000);
   });

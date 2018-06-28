@@ -1,7 +1,6 @@
 <?php
   function resumer($texte, $mots)
   {
-    if(!isset($mot)) { $mots = 30; }
     $chaine = explode(" ", $texte);
     $r = "";
 

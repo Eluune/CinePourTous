@@ -20,7 +20,7 @@
 
   if($filmactu == false)
   {
-    $sql = "SELECT id, date FROM evenement ORDER BY date ASC";
+    $sql = "SELECT id, date FROM film ORDER BY date ASC";
     $resultats=$bdd->query($sql);
     $dernierFilm=$resultats->fetchAll(PDO::FETCH_OBJ);
     $resultats->closeCursor();
@@ -73,7 +73,7 @@
         </tr>
 
         <tr>
-          <td> <a class="horaire" href="#"> Horaires sur le site du cinéma </a> </td>
+          <td> <a class="horaire" href="<?php echo($tableau[$numero]->horaire); ?>"> Horaires sur le site du cinéma </a> </td>
         </tr>
 
       </table>
