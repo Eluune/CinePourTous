@@ -1,0 +1,128 @@
+%content-block {
+  background: var(--blanc);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+%content-titre {
+  .content-titre
+  {
+    position: absolute;
+    text-align: center;
+    background-color: var(--rouge);
+    color: var(--blanc);
+    width: 15%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    font-size: 22px;
+    margin-top: -50px;
+
+    ::after
+    {
+      content: " ";
+      position: absolute;
+      border: medium solid var(--rouge);
+      border-width: 10px 10px 0px 10px;
+      border-color: var(--rouge) transparent transparent transparent;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+
+.format
+{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5vh;
+
+  .content-container
+  {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+    .content-prochainnement
+    {
+      @extend %content-block;
+      @extend %content-titre;
+      width: 57.5%;
+      background: var(--blanc);
+
+      .content-pro-film
+      {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+        .pro-film-image
+        {
+          width: 30%;
+
+          img
+          {
+            width: 100%;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+          }
+        }
+
+        .pro-film-content
+        {
+          width: 55%;
+          position: relative;
+          margin-left: 5%;
+
+          table
+          {
+            display: flex;
+            flex-direction: column;
+
+            tr
+            {
+              align-self: center;
+              color: var(--rouge);
+
+              .datesemaine
+              {
+                color: black;
+                text-align: center;
+                line-height: 300%;
+              }
+
+              span
+              {
+                color: var(--grisclair);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-lieu
+    {
+      @extend %content-block;
+      @extend %content-titre;
+      width: 37.5%;
+      margin-left: 5%;
+      align-self: flex-start;
+
+      #map
+      {
+        max-height: 400px;
+        min-height: 300px;
+        margin-top: 10px;
+      }
+    }
+
+    .NoContent
+    {
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height: 400%;
+    }
+  }
+}
